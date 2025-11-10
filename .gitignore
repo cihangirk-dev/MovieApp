@@ -26,5 +26,3 @@ Package.resolved
 GoogleService-Info.plist
 Core/APIKeys.swift
 MovieApp/Core/APIKeys.swift
-MovieApp/ContentView.swift
-MovieApp/ContentView.swift
