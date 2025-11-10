@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode
+build/
+DerivedData/
+*.xcodeproj/xcuserdata/
+*.xcuserdatad/
+*.xcscmblueprint
+*.xccheckout
+*.developerprofile
+*.mode1v3
+*.pbxuser
+*.perspectivev3
+*.xcscheme
+*.xcworkspace/xcuserdata/
+
+# Swift Package Manager
+.build/
+Packages/
+Package.resolved
+    
+
+GoogleService-Info.plist
+Core/APIKeys.swift
+MovieApp/Core/APIKeys.swift
+MovieApp/ContentView.swift
+MovieApp/ContentView.swift

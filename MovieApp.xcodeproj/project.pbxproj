@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		42685B682EC1F58800DD548C /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = 42685B672EC1F58800DD548C /* Nuke */; };
+		42685B6A2EC1F58800DD548C /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 42685B692EC1F58800DD548C /* NukeUI */; };
+		42E5101E2EBBAE3D003D701F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 42E5101D2EBBAE3D003D701F /* FirebaseAnalytics */; };
+		42E510202EBBAE3D003D701F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 42E5101F2EBBAE3D003D701F /* FirebaseAuth */; };
+		42E510222EBBAE3D003D701F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 42E510212EBBAE3D003D701F /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		422419A32EB245D0006A28A1 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +31,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42685B6A2EC1F58800DD548C /* NukeUI in Frameworks */,
+				42E5101E2EBBAE3D003D701F /* FirebaseAnalytics in Frameworks */,
+				42E510202EBBAE3D003D701F /* FirebaseAuth in Frameworks */,
+				42E510222EBBAE3D003D701F /* FirebaseFirestore in Frameworks */,
+				42685B682EC1F58800DD548C /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,11 @@
 			);
 			name = MovieApp;
 			packageProductDependencies = (
+				42E5101D2EBBAE3D003D701F /* FirebaseAnalytics */,
+				42E5101F2EBBAE3D003D701F /* FirebaseAuth */,
+				42E510212EBBAE3D003D701F /* FirebaseFirestore */,
+				42685B672EC1F58800DD548C /* Nuke */,
+				42685B692EC1F58800DD548C /* NukeUI */,
 			);
 			productName = MovieApp;
 			productReference = 422419A32EB245D0006A28A1 /* MovieApp.app */;
@@ -94,6 +112,10 @@
 			);
 			mainGroup = 4224199A2EB245CF006A28A1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				42E5101C2EBBAE3D003D701F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				42685B662EC1F58800DD548C /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 422419A42EB245D0006A28A1 /* Products */;
 			projectDirPath = "";
@@ -256,6 +278,7 @@
 				DEVELOPMENT_TEAM = YYC7SNM29X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Movie App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +307,7 @@
 				DEVELOPMENT_TEAM = YYC7SNM29X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Movie App";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,6 +348,53 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		42685B662EC1F58800DD548C /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
+		42E5101C2EBBAE3D003D701F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		42685B672EC1F58800DD548C /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42685B662EC1F58800DD548C /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		42685B692EC1F58800DD548C /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42685B662EC1F58800DD548C /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+		42E5101D2EBBAE3D003D701F /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42E5101C2EBBAE3D003D701F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		42E5101F2EBBAE3D003D701F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42E5101C2EBBAE3D003D701F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		42E510212EBBAE3D003D701F /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42E5101C2EBBAE3D003D701F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4224199B2EB245CF006A28A1 /* Project object */;
 }
